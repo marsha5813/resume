@@ -1,0 +1,100 @@
+---
+output:
+  html_document:
+    css: styles.css
+    theme: null
+    linespacing: single
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(kableExtra)
+
+# Read in tables with content
+education <- read.csv("cv-content/education.csv")
+experience <- read.csv("cv-content/experience.csv")
+fellowships <- read.csv("cv-content/fellowships.csv")
+training <- read.csv("cv-content/training.csv")
+affiliations <- read.csv("cv-content/affiliations.csv")
+publications <- read.csv("cv-content/publications.csv") 
+presentations <- read.csv("cv-content/presentations.csv") 
+media <- read.csv("cv-content/media.csv") 
+skills <- read.csv("cv-content/skills.csv") 
+service <- read.csv("cv-content/service.csv") 
+
+# Function to style my tables
+maketable <- function(x) {
+  kable(x, col.names = c("","")) %>% 
+  column_spec(1, bold = T, width="10em", extra_css = "vertical-align:text-top;") %>%
+  column_spec(2, bold = F, width="50em", extra_css = "vertical-align:text-top;") 
+}
+```
+
+# Joey Marshall
+#### Pew Research Center  
+#### 1516 L Street, NW #800 
+#### Washington, D.C. 20036  
+#### jmarshall2@pewresearch.org  
+#### Office: 202-419-4395. Mobile: 903-721-2650.  
+#### Updated February 2019  
+
+
+## Education
+***
+```{r, echo=FALSE}
+maketable(education)
+```
+## Experience
+***
+```{r, echo=FALSE}
+maketable(experience)
+```
+## Fellowships, honors, and awards
+***
+```{r, echo=FALSE}
+maketable(fellowships)
+```
+
+## Publications
+***
+```{r, echo=FALSE}
+kable(publications, col.names = "") 
+```
+
+## Selected conference presentations
+***
+```{r, echo=FALSE}
+kable(presentations, col.names = "") 
+```
+## Media appearances
+***
+```{r, echo=FALSE}
+kable(media, col.names = "") 
+```
+
+## Additional training
+***
+```{r, echo=FALSE}
+maketable(training) %>% column_spec(1, extra_css = "text-align:left;")
+```
+
+## Professional service
+***
+```{r, echo=FALSE}
+kable(service, col.names = "")
+```
+
+## Skills
+***
+```{r, echo=FALSE}
+kable(skills, col.names = "")
+```
+
+## Professional affiliations
+***
+```{r, echo=FALSE}
+maketable(affiliations)
+```
+
+

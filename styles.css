@@ -1,0 +1,40 @@
+* {
+  font-family: "Garamond",serif;
+  padding:0;
+}
+
+p {
+	font-size:12.0pt;
+	margin:0;
+}
+
+h1 {
+  margin:0 0 0.15in;
+	font-size:26.0pt;
+	text-align: center;
+}
+
+h2 {
+  margin:0.25in 0 0 0;
+  text-align: left;
+  font-size: 13.0pt;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-weight:bold;
+  font-style: italic;
+  text-align: left;
+  
+}
+
+h4 {
+  margin:0;
+	font-size:12.0pt;
+	text-align: center;
+	font-weight: normal;
+}
+
+table, td, th {text-align:left;}
+
+.center {text-align: center;}

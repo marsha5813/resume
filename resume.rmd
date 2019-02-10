@@ -1,0 +1,76 @@
+---
+output:
+  html_document:
+    css: styles.css
+    theme: null
+    linespacing: single
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(kableExtra)
+
+# Read in tables with content
+education <- read.csv("resume-content/education.csv")
+experience <- read.csv("resume-content/experience.csv")
+training <- read.csv("resume-content/training.csv")
+publications <- read.csv("resume-content/publications.csv") 
+presentations <- read.csv("resume-content/presentations.csv") 
+skills <- read.csv("resume-content/skills.csv") 
+
+# Function to style my tables
+maketable <- function(x) {
+  kable(x, col.names = c("","")) %>% 
+  column_spec(1, bold = T, width="10em", extra_css = "vertical-align:text-top;") %>%
+  column_spec(2, bold = F, width="50em", extra_css = "vertical-align:text-top;") 
+}
+```
+
+# Joey Marshall
+#### Pew Research Center. 1615 L St. NW #800, Washington, D.C. 20036  
+#### jmarshall2@pewresearch.org. (O) 202.419.4395 . (C) 903.721.2650
+
+
+## Education
+***
+```{r, echo=FALSE}
+maketable(education)
+```
+
+## Experience
+***
+```{r, echo=FALSE}
+maketable(experience)
+```
+
+## Skills
+***
+```{r, echo=FALSE}
+kable(skills, col.names = "")
+```
+  
+\  
+
+## Selected publicatons
+***
+```{r, echo=FALSE}
+kable(publications, col.names = "") %>% 
+  row_spec(1:nrow(publications), extra_css = "height:0.5in;")
+```
+
+## Selected conference presentations
+***
+```{r, echo=FALSE}
+kable(presentations, col.names = "")
+```
+
+## Additional training
+***
+```{r, echo=FALSE}
+maketable(training) %>% column_spec(1, extra_css = "text-align:left;")
+````
+\
+**References and full academic CV available upon request** 
+
+
