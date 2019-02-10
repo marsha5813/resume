@@ -5,11 +5,11 @@ Download my [full academic CV](cv.pdf) here.
 ## How it works
 My resume and CV are authored in [RMarkdown](https://rmarkdown.rstudio.com/). I put the content for all the sections (publications, presentations, etc.) in .csv files and then ```kable()``` them into the .rmd file. So this:  
 
-![img/spreadsheet.PNG](screenshot)
+![https://github.com/marsha5813/resume/img/spreadsheet.PNG](screenshot)
 
 Gets rendered as:
 
-![img/resume.PNG](screenshot)
+![https://github.com/marsha5813/resume/img/resume.PNG](screenshot)
 
 ## Details
 * The styling is done in styles.css.
