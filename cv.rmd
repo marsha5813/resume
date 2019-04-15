@@ -32,12 +32,12 @@ maketable <- function(x) {
 ```
 
 # Joey Marshall
-#### Pew Research Center  
-#### 1516 L Street, NW #800 
-#### Washington, D.C. 20036  
-#### jmarshall2@pewresearch.org  
-#### Office: 202-419-4395. Mobile: 903-721-2650.  
-#### Updated February 2019  
+#### Gartner 
+#### 1201 Wilson Blvd
+#### Arlington, VA 22209
+#### marsha58@purdue.edu
+#### 903-721-2650.  
+#### Updated April 2019  
 
 
 ## Education
