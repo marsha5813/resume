@@ -2,8 +2,11 @@
 output:
   html_document:
     css: styles.css
-    theme: null
     linespacing: single
+    theme: null
+  pdf_document: 
+    latex_engine: xelatex
+  word_document: default
 ---
 
 
@@ -28,8 +31,8 @@ maketable <- function(x) {
 ```
 
 # Joey Marshall
-#### Pew Research Center. 1615 L St. NW #800, Washington, D.C. 20036  
-#### jmarshall2@pewresearch.org. (O) 202.419.4395 . (C) 903.721.2650
+#### Gartner. 1201 Wilson Blvd. Arlington, vA 22209  
+#### joeymarshall@live.com. (O) 571-303-3728 . (C) 903.721.2650
 
 
 ## Education
