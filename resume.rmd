@@ -31,7 +31,7 @@ maketable <- function(x) {
 ```
 
 # Joey Marshall
-#### Gartner. 1201 Wilson Blvd. Arlington, vA 22209  
+#### Gartner. 1201 Wilson Blvd. Arlington, VA 22209  
 #### joeymarshall@live.com. (O) 571-303-3728 . (C) 903.721.2650
 
 
@@ -53,8 +53,11 @@ maketable(experience)
 kable(skills, col.names = "")
 ```
   
-\  
-
+\
+ 
+  
+  
+  
 ## Selected publicatons
 ***
 ```{r, echo=FALSE}
