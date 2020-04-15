@@ -2,8 +2,9 @@
 output:
   html_document:
     css: styles.css
-    theme: null
     linespacing: single
+    theme: null
+  pdf_document: default
 ---
 
 
@@ -37,7 +38,7 @@ maketable <- function(x) {
 #### Arlington, VA 22209
 #### marsha58@purdue.edu
 #### 903-721-2650.  
-#### Updated April 2019  
+#### Updated April 2020  
 
 
 ## Education
@@ -55,6 +56,8 @@ maketable(experience)
 ```{r, echo=FALSE}
 maketable(fellowships)
 ```
+
+\pagebreak
 
 ## Publications
 ***
