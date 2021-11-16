@@ -1,4 +1,5 @@
 ---
+title: "Joey Marshall"
 output:
   html_document:
     css: styles.css
@@ -30,9 +31,8 @@ maketable <- function(x) {
 }
 ```
 
-# Joey Marshall
-#### Gartner. 1201 Wilson Blvd. Arlington, VA 22209  
-#### joeymarshall@live.com. (O) 571-303-3728 . (C) 903.721.2650
+#### U.S. Census Bureau, 4600 Silver Hill Rd, Washington, DC 20233
+#### joeymarshall@live.com. 903.721.2650.
 
 
 ## Education
@@ -47,17 +47,13 @@ maketable(education)
 maketable(experience)
 ```
 
+\pagebreak
+
 ## Skills
 ***
 ```{r, echo=FALSE}
 kable(skills, col.names = "")
 ```
-  
-\
- 
-  
-  
-  
 ## Selected publicatons
 ***
 ```{r, echo=FALSE}
@@ -75,7 +71,7 @@ kable(presentations, col.names = "")
 ***
 ```{r, echo=FALSE}
 maketable(training) %>% column_spec(1, extra_css = "text-align:left;")
-````
+```
 \
 **References and full academic CV available upon request** 
 

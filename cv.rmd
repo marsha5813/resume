@@ -1,4 +1,5 @@
 ---
+title: "Joey Marshall"
 output:
   html_document:
     css: styles.css
@@ -32,14 +33,15 @@ maketable <- function(x) {
 }
 ```
 
-# Joey Marshall
-#### Gartner 
-#### 1201 Wilson Blvd
-#### Arlington, VA 22209
-#### marsha58@purdue.edu
+#### U.S. Census Bureau 
+#### 4600 Silver Hill Rd
+#### Washington, DC 20233
+#### joeymarshall@live.com
 #### 903-721-2650.  
-#### Updated April 2020  
+#### Updated November 2021
 
+<!-- Can insert this pagebreak where needed -->
+<!-- \pagebreak -->
 
 ## Education
 ***
@@ -57,8 +59,6 @@ maketable(experience)
 maketable(fellowships)
 ```
 
-\pagebreak
-
 ## Publications
 ***
 ```{r, echo=FALSE}
@@ -75,29 +75,27 @@ kable(presentations, col.names = "")
 ```{r, echo=FALSE}
 kable(media, col.names = "") 
 ```
-
+## Skills
+***
+```{r, echo=FALSE}
+kable(skills, col.names = "")
+```
 ## Additional training
 ***
 ```{r, echo=FALSE}
 maketable(training) %>% column_spec(1, extra_css = "text-align:left;")
 ```
-
 ## Professional service
 ***
 ```{r, echo=FALSE}
 kable(service, col.names = "")
 ```
 
-## Skills
-***
-```{r, echo=FALSE}
-kable(skills, col.names = "")
-```
-
-## Professional affiliations
-***
-```{r, echo=FALSE}
-maketable(affiliations)
-```
+<!-- Omitting affiliations for now -->
+<!-- ## Professional affiliations -->
+<!-- *** -->
+<!-- ```{r, echo=FALSE} -->
+<!-- maketable(affiliations) -->
+<!-- ``` -->
 
 
